@@ -16,3 +16,6 @@ if astronvim.default_colorscheme then
 end
 
 require("astronvim.utils").conditional_func(astronvim.user_opts("polish", nil, false), true)
+vim.api.nvim_set_keymap("n", ";", ":", { noremap = true })
+vim.cmd [[ colorscheme blue ]]
+vim.cmd [[ syntax on ]]
